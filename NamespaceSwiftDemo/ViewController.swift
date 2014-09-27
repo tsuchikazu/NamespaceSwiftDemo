@@ -14,14 +14,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ライブラリのTestクラス
+        // Test class of framework
         NamespaceSwift.Test().hoge()
         
-        // アプリのTestクラス
+        // Test class of own project
         NamespaceSwiftDemo.Test().fuga()
         
-        // 名前空間指定しない場合は、自分の名前空間から探してあればそれ、無ければ別の名前空間を探しにいく
-        // アプリのTestクラスになる
+        
+        // If you don't specify the namespace, find class from own namespace.
+        // If can't find from own namespace, find class from other namespace.
+        
+        // Test class of my project
         Test().fuga()
         
     }
