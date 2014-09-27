@@ -14,6 +14,7 @@
 		79A33E4119D469C000E1314B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A33E3F19D469C000E1314B /* LaunchScreen.xib */; };
 		79A33E4D19D469C000E1314B /* NamespaceSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A33E4C19D469C000E1314B /* NamespaceSwiftDemoTests.swift */; };
 		79F4944119D47E0C008A6728 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4944019D47E0C008A6728 /* Test.swift */; };
+		79F4945019D68368008A6728 /* NamespaceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F4944F19D68368008A6728 /* NamespaceSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		79A33E4B19D469C000E1314B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A33E4C19D469C000E1314B /* NamespaceSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespaceSwiftDemoTests.swift; sourceTree = "<group>"; };
 		79F4944019D47E0C008A6728 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		79F4944F19D68368008A6728 /* NamespaceSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NamespaceSwift.framework; path = "NamespaceSwift/build/Debug-iphoneos/NamespaceSwift.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F4945019D68368008A6728 /* NamespaceSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		79A33E2819D469C000E1314B = {
 			isa = PBXGroup;
 			children = (
+				79F4944F19D68368008A6728 /* NamespaceSwift.framework */,
 				79A33E3319D469C000E1314B /* NamespaceSwiftDemo */,
 				79A33E4919D469C000E1314B /* NamespaceSwiftDemoTests */,
 				79A33E3219D469C000E1314B /* Products */,
@@ -340,6 +344,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NamespaceSwift/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NamespaceSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NamespaceSwift/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NamespaceSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
